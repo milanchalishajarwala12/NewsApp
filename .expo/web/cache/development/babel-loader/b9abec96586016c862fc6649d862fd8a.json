@@ -1,0 +1,1 @@
+{"ast":null,"code":"var jsonData;\nexport default jsonData;","map":{"version":3,"sources":["/Users/MilanChalishajarwala/Desktop/ReactNative/HybridApp/data.js"],"names":["jsonData"],"mappings":"AAAA,IAAIA,QAAJ;AACA,eAAeA,QAAf","sourcesContent":["var jsonData;\nexport default jsonData;\n"]},"metadata":{},"sourceType":"module"}
