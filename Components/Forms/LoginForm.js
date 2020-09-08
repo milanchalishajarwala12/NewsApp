@@ -56,6 +56,8 @@ function LoginForm() {
           } else {
             Alert.alert('Please complete  all the details');
           }
+          setUserName('');
+          setPassword('');
         }}
       >
         <Text style={Styles.loginButtonText}>Login</Text>

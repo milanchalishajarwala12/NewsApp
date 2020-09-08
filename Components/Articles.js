@@ -9,6 +9,7 @@ import {
   ScrollView,
   Alert,
   Image,
+  ActivityIndicator,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import * as firebase from 'firebase/app';
@@ -32,6 +33,7 @@ const ReusableSelectItem = ({ onPress }) => (
 
 function Articles() {
   var navigation = useNavigation();
+
   const renderItem = ({ item }) => (
     <Item
       title={item.title}
@@ -88,7 +90,7 @@ function Articles() {
                 .then(
                   function () {
                     Alert.alert('Succesfully Signed Out');
-                    navigation.navigate('Login');
+                    navigation.popToTop();
                   },
                   function (error) {
                     console.error('Sign Out Error', error);
